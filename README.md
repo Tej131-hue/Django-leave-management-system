@@ -1,28 +1,64 @@
 <p align="center">
-<img width="800" src="./images/main_2.png">  
+  <img width="800" src="./images/main_2.png">
 </p>
 
+# Django Leave Management System
+
+A web-based employee Leave Management System built with Django and PostgreSQL, with Docker and Docker Compose used for containerized application setup.
 
 ## Overview
 
-The **Leave Management System** is a simple, user-friendly application designed to streamline the process of managing employee leave requests.
+The **Leave Management System** provides a centralized platform for managing employee leave requests, tracking leave balances, and handling the approval workflow.
 
 ## Features
 
-- **User Accounts**:
-    Each employee has a unique account where they can log in, view their leave balance, and submit leave requests.
+- **User Accounts**
+  - Employee authentication and account management.
+  - Users can view their leave balance and manage leave requests.
 
-- **Leave Requests**:
-    Employees can submit requests for different types of leave, such as Annual Leave, sick leave, directly through the system.
+- **Leave Requests**
+  - Submit leave requests for different leave types, including Annual Leave and Sick Leave.
+  - Specify leave dates and track submitted requests.
 
-- **Approval Workflow**:
-    Submitted leave requests are automatically forwarded to the respective personnel for approval or rejection.
+- **Approval Workflow**
+  - Leave requests can be reviewed and processed through an approval workflow.
+  - Requests can have different statuses such as Pending, Approved, Rejected, Modified, and Canceled.
 
-- **Leave Balance Tracking**:
-    The system keeps track of each employee's leave balance, updating it automatically as leave is approved and taken.
+- **Leave Balance Tracking**
+  - View available leave balances.
+  - Track leave usage through the application dashboard.
 
-- **Email Notification**s:
-    Automated email notifications keep users informed about the status of their leave requests.
+- **Request Dashboard**
+  - View request counts and previously submitted leave requests.
+  - Monitor the status of individual requests.
+
+- **Email Notifications**
+  - Automated notifications can keep users informed about leave request status.
+
+## Tech Stack
+
+| Category | Technologies |
+|---|---|
+| Backend | Python, Django |
+| Frontend | HTML, CSS, JavaScript |
+| Database | PostgreSQL |
+| Containerization | Docker, Docker Compose |
+| Version Control | Git, GitHub |
+
+## Project Structure
+
+```text
+Django-leave-management-system/
+│
+├── docs/                  # Project documentation
+├── images/                # Application screenshots
+├── src/                   # Django application source code
+├── Dockerfile             # Docker image configuration
+├── docker-compose.yaml    # Docker Compose configuration
+├── requirements.txt       # Python dependencies
+├── .gitignore
+├── LICENSE
+└── README.md
 
 
 ## Usage
