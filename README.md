@@ -52,20 +52,3 @@ Django-leave-management-system/
 ├── LICENSE               # Project license
 ├── README.md             # Project documentation
 └── requirements.txt      # Python dependencies
-
-
-Usage
-[Setup the application](./docs/Setup.md)
-Note
-Check [docs](./docs/) for more information and detailed setup instructions.
-Use Obsidian for a better reading experience.
-Pics
-<p align="center">
-<img width="400" src="./images/new_balance.png">
-<img width="400" src="./images/new_leave.png">
-</p>
-<p align="center">
-<img width="400" src="./images/approval.png">
-<img width="400" src="./images/rejected.png">
-</p>
-```
