@@ -5,36 +5,28 @@
 
 ## Overview
 
-The **Leave Management System** is a Django-based web application designed to simplify and organize employee leave management. It provides a centralized platform for submitting leave requests, tracking leave balances, and managing the approval workflow.
+The **Leave Management System** is a Django-based web application designed to simplify and streamline employee leave management. It provides users with a centralized platform to submit leave requests, track leave balances, and manage the approval process.
+
 
 ## Features
 
 - **User Accounts**:
-    Employees can log in to their accounts, view their leave balance, and manage their leave requests.
+    Employees can securely log in to their accounts, view their leave balance, and manage their leave requests.
 
 - **Leave Requests**:
-    Employees can submit leave requests by selecting the required leave type and specifying the leave dates.
+    Employees can submit requests for different types of leave, including Annual Leave and Sick Leave, by specifying the required dates and details.
 
 - **Approval Workflow**:
-    Submitted leave requests can be reviewed and processed through the approval workflow, with requests supporting different statuses such as pending, approved, rejected, modified, and canceled.
+    Submitted leave requests can be reviewed and processed through an approval workflow with different request statuses.
 
 - **Leave Balance Tracking**:
-    The system displays available leave balances and helps track leave usage based on approved requests.
+    The system maintains and displays employee leave balances, helping users monitor their available leave.
 
-- **Request Management**:
-    Users can view their submitted leave requests along with the request status, leave type, dates, and number of leave days.
+- **Request Status Management**:
+    Users can view the status of their leave requests, including pending, approved, rejected, modified, and canceled requests.
 
 - **Email Notifications**:
-    The application supports email notifications to keep users informed about changes in their leave request status.
-
-
-## Technology Stack
-
-- **Backend:** Python, Django
-- **Frontend:** HTML, CSS, JavaScript
-- **Database:** PostgreSQL
-- **Containerization:** Docker, Docker Compose
-- **Version Control:** Git, GitHub
+    Automated email notifications help keep users informed about updates to their leave requests.
 
 
 ## Usage
@@ -42,24 +34,19 @@ The **Leave Management System** is a Django-based web application designed to si
 [Setup the application](./docs/Setup.md)
 
 
-## Project Setup
+## Note
 
-The application can be run locally using Docker and Docker Compose. The setup includes the Django application and PostgreSQL database, providing a consistent development environment.
+Check [docs](./docs/) for more information and detailed setup instructions.
+Use [Obsidian](https://obsidian.md/) for a better reading experience.
 
-For detailed installation and setup instructions, refer to the [Setup Guide](./docs/Setup.md).
 
+## Pics
 
-## Project Structure
-
-```text
-Django-leave-management-system/
-│
-├── docs/                 # Project documentation
-├── images/               # Application screenshots
-├── src/                  # Django application source code
-├── Dockerfile            # Docker image configuration
-├── docker-compose.yaml   # Docker Compose configuration
-├── requirements.txt      # Python dependencies
-├── .gitignore
-├── LICENSE
-└── README.md
+<p align="center">
+<img width="400" src="./images/new_balance.png">
+<img width="400" src="./images/new_leave.png">
+</p>
+<p align="center">
+<img width="400" src="./images/approval.png">
+<img width="400" src="./images/rejected.png">
+</p>
