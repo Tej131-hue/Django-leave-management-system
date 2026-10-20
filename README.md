@@ -1,81 +1,65 @@
 <p align="center">
-  <img width="800" src="./images/main_2.png">
+<img width="800" src="./images/main_2.png">  
 </p>
 
-# Django Leave Management System
-
-A web-based employee Leave Management System built with Django and PostgreSQL, with Docker and Docker Compose used for containerized application setup.
 
 ## Overview
 
-The **Leave Management System** provides a centralized platform for managing employee leave requests, tracking leave balances, and handling the approval workflow.
+The **Leave Management System** is a Django-based web application designed to simplify and organize employee leave management. It provides a centralized platform for submitting leave requests, tracking leave balances, and managing the approval workflow.
 
 ## Features
 
-- **User Accounts**
-  - Employee authentication and account management.
-  - Users can view their leave balance and manage leave requests.
+- **User Accounts**:
+    Employees can log in to their accounts, view their leave balance, and manage their leave requests.
 
-- **Leave Requests**
-  - Submit leave requests for different leave types, including Annual Leave and Sick Leave.
-  - Specify leave dates and track submitted requests.
+- **Leave Requests**:
+    Employees can submit leave requests by selecting the required leave type and specifying the leave dates.
 
-- **Approval Workflow**
-  - Leave requests can be reviewed and processed through an approval workflow.
-  - Requests can have different statuses such as Pending, Approved, Rejected, Modified, and Canceled.
+- **Approval Workflow**:
+    Submitted leave requests can be reviewed and processed through the approval workflow, with requests supporting different statuses such as pending, approved, rejected, modified, and canceled.
 
-- **Leave Balance Tracking**
-  - View available leave balances.
-  - Track leave usage through the application dashboard.
+- **Leave Balance Tracking**:
+    The system displays available leave balances and helps track leave usage based on approved requests.
 
-- **Request Dashboard**
-  - View request counts and previously submitted leave requests.
-  - Monitor the status of individual requests.
+- **Request Management**:
+    Users can view their submitted leave requests along with the request status, leave type, dates, and number of leave days.
 
-- **Email Notifications**
-  - Automated notifications can keep users informed about leave request status.
+- **Email Notifications**:
+    The application supports email notifications to keep users informed about changes in their leave request status.
 
-## Tech Stack
 
-| Category | Technologies |
-|---|---|
-| Backend | Python, Django |
-| Frontend | HTML, CSS, JavaScript |
-| Database | PostgreSQL |
-| Containerization | Docker, Docker Compose |
-| Version Control | Git, GitHub |
+## Technology Stack
+
+- **Backend:** Python, Django
+- **Frontend:** HTML, CSS, JavaScript
+- **Database:** PostgreSQL
+- **Containerization:** Docker, Docker Compose
+- **Version Control:** Git, GitHub
+
+
+## Usage
+
+[Setup the application](./docs/Setup.md)
+
+
+## Project Setup
+
+The application can be run locally using Docker and Docker Compose. The setup includes the Django application and PostgreSQL database, providing a consistent development environment.
+
+For detailed installation and setup instructions, refer to the [Setup Guide](./docs/Setup.md).
+
 
 ## Project Structure
 
 ```text
 Django-leave-management-system/
 │
-├── docs/                  # Project documentation
-├── images/                # Application screenshots
-├── src/                   # Django application source code
-├── Dockerfile             # Docker image configuration
-├── docker-compose.yaml    # Docker Compose configuration
-├── requirements.txt       # Python dependencies
+├── docs/                 # Project documentation
+├── images/               # Application screenshots
+├── src/                  # Django application source code
+├── Dockerfile            # Docker image configuration
+├── docker-compose.yaml   # Docker Compose configuration
+├── requirements.txt      # Python dependencies
 ├── .gitignore
 ├── LICENSE
 └── README.md
-
-
-## Usage
-[Setup the application](./docs/Setup.md)
-
-
-
-## Note
-Check [docs](./docs/) for more info.
-Use [Obisden md](https://obsidian.md/) for a better reading experience.
-
-## Pics
-<p align="center">
-<img width="400" src="./images/new_balance.png">
-<img width="400" src="./images/new_leave.png">
-</p>
-<p align="center">
-<img width="400" src="./images/approval.png">
-<img width="400" src="./images/rejected.png">
-</p>
